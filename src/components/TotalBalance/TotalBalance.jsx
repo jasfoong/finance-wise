@@ -18,7 +18,7 @@ const TotalBalance = ({categoryBalance, newBalance}) => {
     const categoryBalances = moneyCategories.map(category => {
         return(
             <li key={category}>
-                {category}: {categoryBalance[category]}
+                {category}: ${categoryBalance[category]}
             </li>
         )
     })
