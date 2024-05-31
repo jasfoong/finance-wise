@@ -6,7 +6,7 @@ import InteractionPage from "./pages/InteractionPage/InteractionPage";
 import Footer from "./components/Footer/Footer";
 
 function App() {
-  const [totalBalance, setTotalBalance] = useState();
+  const totalBalance = 3000;
   const [categoryBalance, setCategoryBalance] = useState();
 
   return (
@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<OnboardingPage 
-            setTotalBalance={setTotalBalance} 
+            totalBalance={totalBalance} 
             setCategoryBalance={setCategoryBalance} />} 
           />
           <Route path="/account" element={<InteractionPage />} />
