@@ -10,7 +10,7 @@ const InteractionPage = ({ totalBalance, categoryBalance }) => {
       <Header />
       <h1>current account balance should go here</h1>
       <p>starting balance: {totalBalance}</p>
-      <Chart />
+      <Chart categoryBalance={categoryBalance} totalBalance={totalBalance} />
       <p>Category balances and pie chart down here?</p>
     </>
   );
