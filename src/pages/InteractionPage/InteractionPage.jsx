@@ -4,10 +4,10 @@ import Chart from "../../components/Chart/Chart";
 import TotalBalance from "../../components/TotalBalance/TotalBalance";
 import { useEffect } from "react";
 
+import Pie from "../../components/Pie/Pie";
+
 const InteractionPage = ({ totalBalance, categoryBalance }) => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  console.log(categoryBalance); //access balance as needed
 
   return (
     <>
@@ -16,6 +16,7 @@ const InteractionPage = ({ totalBalance, categoryBalance }) => {
       {/* <TotalBalance categoryBalance={categoryBalance} newBalance={newBalance} /> */}
 
       <Chart categoryBalance={categoryBalance} totalBalance={totalBalance} />
+      <Pie categoryBalance={categoryBalance} totalBalance={totalBalance} />
     </>
   );
 };
