@@ -6,11 +6,10 @@
         display:flex;
         align-items: center;
         justify-content: space-between;
-        margin:1rem;
+        margin:1.3rem 1rem 1rem 1rem;
 
     &__logo-image{
-        width: 18vw;
-        height: 18vw;
+        width:58%;
 
         @include tablet{
             width:25%;

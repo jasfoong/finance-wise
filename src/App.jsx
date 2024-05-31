@@ -7,15 +7,20 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const totalBalance = 3000;
-  const [categoryBalance, setCategoryBalance] = useState();
+  const [categoryBalance, setCategoryBalance] = useState({});
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<OnboardingPage 
-            totalBalance={totalBalance} 
-            setCategoryBalance={setCategoryBalance} />} 
+          <Route
+            path="/"
+            element={
+              <OnboardingPage
+                totalBalance={totalBalance}
+                setCategoryBalance={setCategoryBalance}
+              />
+            }
           />
           <Route path="/account" element={<InteractionPage categoryBalance={categoryBalance}/>} />
         </Routes>
