@@ -1,11 +1,18 @@
 import "./OnboardingPage.scss"
 import Header from "../../components/Header/Header"
+import OnboardingForm from "../../components/OnboardingForm/OnboardingForm"
+import RandomizedTips from "../../components/RandomizedTips/RandomizedTips";
 
-const OnboardingPage = () => {
+
+const OnboardingPage = ({ totalBalance, setCategoryBalance }) => {
     return (
         <>
-        <Header />
-        <h1>onboarding page goes here</h1>
+          <Header />
+          <RandomizedTips />
+          <OnboardingForm 
+            totalBalance={totalBalance}
+            setCategoryBalance={setCategoryBalance} 
+          />
         </>
     )
 };
