@@ -1,0 +1,20 @@
+@use "../../styles/partials/_mixins" as *;
+@use "../../styles/partials/_variables" as *;
+@use "../../styles/partials/_typography" as *;
+
+.total-balance {
+    &__overall {
+        @include form-label;
+        font-size: 1.2rem;
+    }
+
+    &__categories {
+        @include form-label;
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    &__items {
+        margin-left: 1rem;
+    }
+}
