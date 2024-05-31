@@ -1,24 +1,25 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import "./App.scss";
 import OnboardingPage from "./pages/OnboardingPage/OnboardingPage";
 import InteractionPage from "./pages/InteractionPage/InteractionPage";
 import Footer from "./components/Footer/Footer";
-import Button from "./components/Button/Button";
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import "./Toastify.scss";
 
 function App() {
+  const totalBalance = 3000;
+  const [categoryBalance, setCategoryBalance] = useState();
+
   return (
     <>
-    <ToastContainer hideProgressBar={true}/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<OnboardingPage />} />
+          <Route path="/" element={<OnboardingPage 
+            totalBalance={totalBalance} 
+            setCategoryBalance={setCategoryBalance} />} 
+          />
           <Route path="/account" element={<InteractionPage />} />
         </Routes>
       </BrowserRouter>
-      <Button />
       <Footer />
     </>
   );

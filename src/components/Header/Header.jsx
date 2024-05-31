@@ -1,11 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from "../../assets/icons/logo.png";
+import user from "../../assets/icons/user.svg";
+import gift from "../../assets/icons/gifts.svg";
 import "./Header.scss"
 
-const InteractionPage = () => {
+const Header = () => {
     return (
-        <>
-        <h1>header goes here</h1>
-        </>
-    )
+        <div className="header">
+            <div className="header__logo">
+                <Link to="/">
+                    <img src={logo} alt="Logo" className="header__logo-image" />
+                </Link>
+            </div>
+            <div className="header__icon">
+                <div className='header__icon-gift'>
+                    <img src={gift} alt="Gift-icon" className="header__icon-gift-image" />
+                </div>
+                <div className="header__icon-user">
+                    <img src={user} alt="User-icon" className="header__icon-user-image" />
+                </div>
+            </div>
+      </div>
+    );
 };
 
-export default InteractionPage;
+export default Header;
