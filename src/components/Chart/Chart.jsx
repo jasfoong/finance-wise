@@ -89,8 +89,8 @@ export default function Chart({ totalBalance, categoryBalance }) {
             },
           },
         ]}
-        width={300}
-        height={320}
+        width={400}
+        height={400}
       />
       <button className="chart__button" onClick={clickHandler}>
         simulate a new day
