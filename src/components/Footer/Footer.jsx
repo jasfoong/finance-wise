@@ -24,15 +24,15 @@ export default function Footer(){
                     <a href="/" className="footer__link" onClick={() => handleLinkClick('/')}>
                         <img src={activeLink === '/' ? activeHomeIcon : homeIcon} alt="home icon" className="footer__icon" />
                     </a>
-                    <a href="/account" className="footer__link" onClick={() => handleLinkClick('/account')}>
-                        <img src={activeLink === '/account' ? activeSearchIcon : searchIcon} alt="search icon" className="footer__icon" />
-                    </a>
+                    
+                    <img src={activeLink === '/search' ? activeSearchIcon : searchIcon} alt="search icon" className="footer__icon" />
+                    
                     <a href="/account" className="footer__link" onClick={() => handleLinkClick('/account')}>
                         <img src={activeLink === '/account' ? activeArrowsIcon : arrowsIcon} alt="adjacent left and right arrow icon" className="footer__icon" />
                     </a>
-                    <a href="/account" className="footer__link">
-                        <img src={activeLink === '/account' ? activeClockIcon : clockIcon} alt="clock icon" className="footer__icon" />
-                    </a>
+                    
+                    <img src={activeLink === '/activity' ? activeClockIcon : clockIcon} alt="clock icon" className="footer__icon" />
+
                 </ul>
             </li>
         </section>
