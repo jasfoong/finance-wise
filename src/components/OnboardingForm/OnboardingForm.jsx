@@ -6,7 +6,7 @@ const OnboardingForm = ({ totalBalance, setCategoryBalance }) => {
   const navigate = useNavigate();
   const initialBalance = totalBalance;
   const moneyCategories = [
-    "rent/mortgage",
+    "rent",
     "bills",
     "transportation",
     "food",
