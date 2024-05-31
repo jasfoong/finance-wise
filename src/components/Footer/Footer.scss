@@ -2,19 +2,19 @@
 @use "../../styles/partials/variables.scss" as *;
 
 .footer {
-    &__section {
-        border-top: 0.01rem solid $darkgrey;
-        padding-top: 2rem;
-        position: relative;
-        top: 20rem;
-    }
+  &__section {
+    border-top: 0.01rem solid $darkgrey;
+    padding-top: 2rem;
+    position: relative;
+    background-color: white;
+  }
 
-    &__link-group {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  &__link-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    &__icon {
-        width: 3.5rem;
-    }
+  &__icon {
+    width: 3.5rem;
+  }
 }
