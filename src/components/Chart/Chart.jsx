@@ -17,7 +17,7 @@ export default function Chart({ totalBalance, categoryBalance }) {
     { x: 1, y: totalBalance },
   ]);
 
-  const [newBalance, setNewBalance] = useState(0);
+  const [newBalance, setNewBalance] = useState(3000);
 
   const totalExpenses =
     Number(categoryBalance.bills) +
