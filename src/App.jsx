@@ -22,7 +22,15 @@ function App() {
               />
             }
           />
-          <Route path="/account" element={<InteractionPage />} />
+          <Route
+            path="/account"
+            element={
+              <InteractionPage
+                categoryBalance={categoryBalance}
+                totalBalance={totalBalance}
+              />
+            }
+          />
         </Routes>
       </BrowserRouter>
       <Footer />
