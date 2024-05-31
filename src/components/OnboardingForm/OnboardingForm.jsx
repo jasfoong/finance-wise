@@ -1,10 +1,3 @@
-
-/*
-- users choose how much to put in each category - Jasmine
-- form inputs:
-- amount for each money category
-*/
-
 import { useNavigate } from "react-router-dom";
 import { useState } from "react"
 import "./OnboardingForm.scss"
@@ -98,10 +91,8 @@ const OnboardingForm = () => {
             <div className="onboarding-form__balance">
                 <h4 className="onboarding-form__balance-label">Balance</h4>
                 <h4 className={`onboarding-form__balance-amount ${(balanceError || Object.keys(inputErrors).some(category => inputErrors[category])) && "onboarding-form__balance-error"}`}>${remainingBalance}</h4>
-                {/* {!isFormValid && (Object.keys(inputErrors).length > 0 || balanceError) && <div className="onboarding-form__required-text">Please allocate your remaining balance</div>} */}
             </div>
             <div className="onboarding-form__error-container">
-                {/* {balanceError && <div className="onboarding-form__error-text">{balanceError}</div>} */}
                 {!isFormValid && (Object.keys(inputErrors).length > 0 || balanceError) && <div className="onboarding-form__balance-error-text">Please allocate your remaining balance</div>}
             </div>
             <div className="onboarding-form__button-container">
