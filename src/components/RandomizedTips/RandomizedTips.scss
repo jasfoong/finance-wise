@@ -1,0 +1,18 @@
+@use "../../styles/partials/_mixins" as *;
+@use "../../styles/partials/_variables" as *;
+@use "../../styles/partials/_typography" as *;
+
+.randomized-tips {
+
+    &__wrapper {
+        margin: 1rem;
+        padding: 1rem;
+        border: 1.25px solid $lightgrey;
+        border-radius: 1rem;
+        background-color: white;
+    }
+
+    &__heading {
+        margin-bottom: 1rem;
+    }
+}
