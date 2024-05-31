@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react"
 import "./OnboardingForm.scss"
 
-const OnboardingForm = () => {
+const OnboardingForm = ({ setTotalBalance, setCategoryBalance }) => {
     const navigate = useNavigate();
     const initialBalance = 3000;
     const moneyCategories = [
@@ -59,6 +59,8 @@ const OnboardingForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setTotalBalance(initialBalance);
+        setCategoryBalance(values);
         validateForm();
         if (!Object.values(inputErrors).some(error => error) && remainingBalance === 0) {
             navigate("/account");
