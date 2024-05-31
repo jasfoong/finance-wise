@@ -34,7 +34,7 @@ const TotalBalance = ({categoryBalance}) => {
 
             <section className="total-balance__categories">
                 <h2 className="total-balance__title">Total Category Balances:</h2>
-                <ul>
+                <ul className="total-balance__items">
                     {categoryBalances}
                 </ul>
             </section>
