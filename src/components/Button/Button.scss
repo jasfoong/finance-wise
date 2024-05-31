@@ -1,0 +1,20 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/typography" as *;
+@use "../../styles/partials/mixins" as *;
+
+.button__simulation{
+        font-family: $font-family;
+        background-color: $light;
+        color: $dark;
+        margin: 0;
+        padding: 0.3rem 2rem;
+        border-radius: 1rem;
+        border: 1px solid $dark;
+        font-weight: 400;
+
+        &:hover{
+            background-color: $dark;
+            color: $light;
+        }
+
+}

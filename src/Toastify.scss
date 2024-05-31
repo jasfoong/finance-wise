@@ -1,0 +1,18 @@
+@use "./styles/partials/global.scss" as *;
+@use "./styles/partials/variables" as *;
+
+.toast-success {
+    background-color: #5116c7 !important; // Custom background color for success
+    color: white !important; // Custom text color for success
+    font-size: 16px !important; // Custom font size
+    font-weight: bold !important; // Custom font weight
+    border-radius: 8px !important; // Custom border radius
+  }
+  
+  .toast-error {
+    background-color: #dc3545 !important; // Custom background color for error
+    color: white !important; // Custom text color for error
+    font-size: 16px !important; // Custom font size
+    font-weight: bold !important; // Custom font weight
+    border-radius: 8px !important; // Custom border radius
+  }
