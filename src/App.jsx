@@ -17,7 +17,7 @@ function App() {
             totalBalance={totalBalance} 
             setCategoryBalance={setCategoryBalance} />} 
           />
-          <Route path="/account" element={<InteractionPage />} />
+          <Route path="/account" element={<InteractionPage categoryBalance={categoryBalance}/>} />
         </Routes>
       </BrowserRouter>
       <Footer />

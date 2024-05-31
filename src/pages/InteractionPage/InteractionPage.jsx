@@ -7,7 +7,7 @@ const InteractionPage = ({categoryBalance}) => {
   return (
     <>
       <Header />
-      <TotalBalance categoryBalance={categoryBalance} />
+      <TotalBalance categoryBalance={categoryBalance}/>
       <h1>interaction page goes here</h1>
       <Chart />
     </>

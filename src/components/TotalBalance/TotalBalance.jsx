@@ -16,7 +16,7 @@ const TotalBalance = ({categoryBalance}) => {
     const totalBalance = Object.values(categoryBalance).reduce((total, value) => {
         const amount = parseFloat(value) || 0;
         return total + amount;
-    })
+    }, 0).toFixed(2);
 
     const categoryBalances = moneyCategories.map(category => {
         return(
