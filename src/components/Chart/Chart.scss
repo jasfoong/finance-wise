@@ -1,4 +1,4 @@
-@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/variables"as *;
 
 .chart {
   display: flex;
@@ -11,6 +11,12 @@
     background-color: $lightgrey;
     width: 70%;
     font-weight: 400;
-    padding: 0.4rem 1rem;
+    font-family: $font-family;
+    padding: 0.3rem 2rem;
+
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
   }
 }
