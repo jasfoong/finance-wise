@@ -9,12 +9,15 @@ import {
   notifyPayDay,
   notifyInflation,
 } from "./notification";
+import TotalBalance from "../TotalBalance/TotalBalance";
 
 export default function Chart({ totalBalance, categoryBalance }) {
   const [accountBalanceData, setAccountBalanceData] = useState([
     { x: 0, y: totalBalance },
     { x: 1, y: totalBalance },
   ]);
+
+  const [newBalance, setNewBalance] = useState(0);
 
   const totalExpenses =
     Number(categoryBalance.bills) +
@@ -69,6 +72,7 @@ export default function Chart({ totalBalance, categoryBalance }) {
     newData.push({ x: newDay, y: newBalance });
 
     setAccountBalanceData(newData);
+    setNewBalance(newBalance);
   }
 
   return (
@@ -98,6 +102,7 @@ export default function Chart({ totalBalance, categoryBalance }) {
       <button className="chart__button" onClick={clickHandler}>
         simulate a new day
       </button>
+      <TotalBalance categoryBalance={categoryBalance} newBalance={newBalance} />
     </div>
   );
 }
