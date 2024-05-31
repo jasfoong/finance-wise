@@ -92,6 +92,9 @@ export default function Chart({ totalBalance, categoryBalance }) {
         width={400}
         height={400}
       />
+      <p>Your total monthly expenses: $ {totalExpenses}</p>
+      <p>Each day you might spend: $ {Math.round(totalExpenses / 30)}</p>
+      <p>Your total monthly savings and investements: $ {totalSavings}</p>
       <button className="chart__button" onClick={clickHandler}>
         simulate a new day
       </button>
