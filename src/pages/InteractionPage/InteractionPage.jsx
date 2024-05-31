@@ -14,7 +14,7 @@ const InteractionPage = ({ totalBalance, categoryBalance }) => {
       <Chart categoryBalance={categoryBalance} totalBalance={totalBalance} />
       <p>Category balances and pie chart down here?</p>
       <div className="Piechart">
-        <Pie />
+        <Pie totalBalance={totalBalance} categoryBalance={categoryBalance}/>
       </div>
     </>
   );
