@@ -1,11 +1,12 @@
 import "./OnboardingPage.scss"
 import Header from "../../components/Header/Header"
+import OnboardingForm from "../../components/OnboardingForm/OnboardingForm"
 
 const OnboardingPage = () => {
     return (
         <>
         <Header />
-        <h1>onboarding page goes here</h1>
+        <OnboardingForm />
         </>
     )
 };

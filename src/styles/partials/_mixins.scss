@@ -14,3 +14,11 @@
     @content;
   }
 }
+
+//onboarding for mixins
+@mixin form-label {
+  text-transform: capitalize;
+  font-weight: 800;
+  color: $dark;
+  font-size: 1rem;
+}
