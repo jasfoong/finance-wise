@@ -1,0 +1,15 @@
+@use "../../styles/partials/variables" as *;
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  &__button {
+    border-radius: 20px;
+    background-color: $lightgrey;
+    width: 70%;
+    font-weight: 400;
+  }
+}
