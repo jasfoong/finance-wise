@@ -46,7 +46,11 @@ export default function MyPieChart({ categoryBalance }) {
             startAngle: 0,
             endAngle: 360,
             tooltip: {
-              formatter: (value) => `${Math.round(value)}%`,
+              itemContent: (item) => (
+                <div>
+                  {item.label}
+                </div>
+              ),
             },
           },
         ]}
