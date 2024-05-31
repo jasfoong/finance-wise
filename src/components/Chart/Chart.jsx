@@ -26,46 +26,38 @@ export default function Chart({ totalBalance, categoryBalance }) {
     Number(categoryBalance.health) +
     Number(categoryBalance.rent) +
     Number(categoryBalance.subscriptions);
-  console.log("total expenses ", totalExpenses);
 
   const totalSavings =
     Number(categoryBalance.savings) + Number(categoryBalance.investments);
-  console.log(`total investments `, totalSavings);
 
-  const changeEachDay = -(totalExpenses / 30); //formula here like expenses /30?
-  console.log(changeEachDay);
-  const surpriseCost = -3000; //  fixed amount?
-  const surpriseGain = +(totalSavings * 1.25); //formula here like (investements+savings)* 1.25
-  const income = +3000; //formula/ input?
+  const changeEachDay = -(totalExpenses / 30);
+  const surpriseCost = -3000;
+  const surpriseGain = +(totalSavings * 1.25);
+  const income = +3000;
 
   function clickHandler() {
     const newData = [...accountBalanceData];
     const lastDataPoint = newData[newData.length - 1];
     const newDay = lastDataPoint.x + 1;
 
-    console.log(`everyday expenses`, changeEachDay);
     let newBalance = lastDataPoint.y + changeEachDay;
 
     if (newDay % 6 === 0) {
       newBalance += surpriseGain;
       notifySurpriseGain();
-      console.log(`surprise gain: `, surpriseGain);
     }
     if (newDay % 5 === 0) {
       newBalance += surpriseCost;
       notifyEmergencyCost();
-      console.log(`surprise expense: `, surpriseCost);
     }
     if (newDay % 7 === 0) {
       newBalance += income;
       notifyPayDay();
-      console.log(`pay day: `, income);
     }
 
     if (newDay % 10 === 0) {
       newBalance += changeEachDay * 1.5;
       notifyInflation();
-      console.log(`inflation: `, changeEachDay * 1.5);
     }
 
     console.log({ x: newDay, y: newBalance });
