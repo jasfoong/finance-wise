@@ -4,6 +4,7 @@ import Chart from "../../components/Chart/Chart";
 
 const InteractionPage = ({ totalBalance, categoryBalance }) => {
   console.log(categoryBalance); //access balance as needed
+
   return (
     <>
       <Header />
