@@ -9,7 +9,8 @@
         margin:1rem;
 
     &__logo-image{
-        width:55%;
+        width: 18vw;
+        height: 18vw;
 
         @include tablet{
             width:25%;
