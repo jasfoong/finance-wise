@@ -4,6 +4,7 @@ import Chart from "../../components/Chart/Chart";
 import TotalBalance from "../../components/TotalBalance/TotalBalance";
 import { useEffect } from "react";
 
+
 const InteractionPage = ({ totalBalance, categoryBalance }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,7 +13,9 @@ const InteractionPage = ({ totalBalance, categoryBalance }) => {
   return (
     <>
       <Header />
+
       <TotalBalance categoryBalance={categoryBalance} />
+
       <Chart categoryBalance={categoryBalance} totalBalance={totalBalance} />
     </>
   );
