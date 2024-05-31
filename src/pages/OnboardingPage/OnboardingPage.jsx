@@ -4,12 +4,15 @@ import OnboardingForm from "../../components/OnboardingForm/OnboardingForm"
 import RandomizedTips from "../../components/RandomizedTips/RandomizedTips";
 
 
-const OnboardingPage = () => {
+const OnboardingPage = ({ totalBalance, setCategoryBalance }) => {
     return (
         <>
           <Header />
-          <OnboardingForm />
           <RandomizedTips />
+          <OnboardingForm 
+            totalBalance={totalBalance}
+            setCategoryBalance={setCategoryBalance} 
+          />
         </>
     )
 };
