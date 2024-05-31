@@ -15,10 +15,10 @@ const Header = () => {
             </div>
             <div className="header__icon">
                 <div className='header__icon-gift'>
-                    <img src={gift} alt="Gift-icon" />
+                    <img src={gift} alt="Gift-icon" className="header__icon-gift-image" />
                 </div>
                 <div className="header__icon-user">
-                    <img src={user} alt="User-icon"/>
+                    <img src={user} alt="User-icon" className="header__icon-user-image" />
                 </div>
             </div>
       </div>
