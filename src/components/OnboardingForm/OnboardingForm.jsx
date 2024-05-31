@@ -4,7 +4,7 @@ import "./OnboardingForm.scss";
 
 const OnboardingForm = ({ totalBalance, setCategoryBalance }) => {
   const navigate = useNavigate();
-  const initialBalance = 3000;
+  const initialBalance = totalBalance;
   const moneyCategories = [
     "rent/mortgage",
     "bills",

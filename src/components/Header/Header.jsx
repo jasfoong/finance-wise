@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../../assets/icons/logo.png";
+import logo from "../../assets/icons/wealthsimple-favicon-grey.png";
 import user from "../../assets/icons/user.svg";
 import gift from "../../assets/icons/gifts.svg";
 import "./Header.scss"
