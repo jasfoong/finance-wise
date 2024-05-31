@@ -1,6 +1,35 @@
 @use "../../styles/partials/global.scss" as *;
 @use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins" as *;
 
 .header{
-    display: flex;
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin:1rem;
+        @include tablet{
+            width: 100%;
+        }
+
+    &__logo{
+        &-image{
+            width:55%;
+        }
+    }
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        &-gift-image{
+            width:22px;
+            height:22px;
+        }
+        &-user-image{
+            width:22px;
+            height:22px;
+        }
+    }
+
 }

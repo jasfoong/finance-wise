@@ -14,17 +14,15 @@ const Header = () => {
                 </Link>
             </div>
             <div className="header__icon">
-                <Link to="/">
-                    <img src={gift} alt="Gift" className="header__icon-gift" />
-                </Link>
+                <div className='header__icon-gift'>
+                    <img src={gift} alt="Gift-icon" />
+                </div>
+                <div className="header__icon-user">
+                    <img src={user} alt="User-icon"/>
+                </div>
             </div>
-            <div className="header__icon">
-                <Link to="/">
-                    <img src={user} alt="User" className="header__icon-user" />
-                </Link>
-            </div>
-        </div>
-    )
+      </div>
+    );
 };
 
 export default Header;
