@@ -13,7 +13,7 @@ const InteractionPage = ({ totalBalance, categoryBalance }) => {
     <>
       <Header />
 
-      <TotalBalance categoryBalance={categoryBalance} />
+      {/* <TotalBalance categoryBalance={categoryBalance} newBalance={newBalance} /> */}
 
       <Chart categoryBalance={categoryBalance} totalBalance={totalBalance} />
       <Pie categoryBalance={categoryBalance} totalBalance={totalBalance} />
