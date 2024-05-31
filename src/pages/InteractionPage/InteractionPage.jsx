@@ -2,6 +2,7 @@ import "./InteractionPage.scss";
 import Header from "../../components/Header/Header";
 import Chart from "../../components/Chart/Chart";
 
+
 const InteractionPage = () => {
   return (
     <>
